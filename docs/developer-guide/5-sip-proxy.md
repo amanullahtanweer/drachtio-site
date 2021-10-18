@@ -4,7 +4,7 @@ Building a SIP proxy with drachtio is pretty darn simple.
 ```js
 srf.invite((req, res) => {
   srf.proxyRequest(req, 'sip.example1.com')
-    .then((results) => console.log(JSON.stringify(result)) );
+    .then((results) => console.log(JSON.stringify(results)) );
 });
 ```
 In the example above, we receive an INVITE and then proxy it onwards to the server at 'sip.example1.com'.
